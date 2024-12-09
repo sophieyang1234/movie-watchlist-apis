@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="devbox" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="devbox">
+        <serverdata>
+          <mappings>
+            <mapping deploy="movie-watchlist" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$\*.tsbuildinfo" />
+            <excludedPath local="true" path="$PROJECT_DIR$\.tscache" />
+            <excludedPath local="true" path="$PROJECT_DIR$\node_modules" />
+            <excludedPath local="true" path="$PROJECT_DIR$\build" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

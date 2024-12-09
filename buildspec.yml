@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  pre_build:
+    commands:
+      - npm i -g npm@7
+      - '${NpmLoginCommand}'
+      - npm i
+  build:
+    commands:
+      - grunt make:release
+  post_build:
+    commands:
+      - npm ci --production
+artifacts:
+  files:
+    - '**/*'

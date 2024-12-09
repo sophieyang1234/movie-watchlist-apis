@@ -1,0 +1,37 @@
+swagger: "2.0"
+info:
+  title: Example
+  version: "auto"
+x-resourceInitializer: ResourceInitializer
+x-resources:
+  exampleCache:
+    resourceType: cache
+    resourceId: example
+  exampleDB:
+    resourceType: db
+    resourceId: example
+x-endpointContainers:
+  EndpointContainer:
+    resources:
+      - exampleCache
+      - exampleDB
+x-security:
+  apiKey:
+    type: APIKey
+    key:
+      envString: apiKey
+    keyName: apiKey
+  clEmployeeOnly:
+    well-known: ValidClassLinkEmployeeToken
+paths:
+  /helloWorld:
+    get:
+      x-security: apiKey
+      x-handler: EndpointContainer.helloWorld
+      parameters:
+        - name: data
+          in: query
+          required: false
+          type: string
+      tags:
+        - Example

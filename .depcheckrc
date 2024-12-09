@@ -1,0 +1,12 @@
+{
+  "ignores": [
+    "check-outdated",
+    "depcheck",
+    "eslint",
+    "grunt",
+    "grunt-*",
+    "mocha-*",
+    "sinon",
+    "typescript"
+  ]
+}

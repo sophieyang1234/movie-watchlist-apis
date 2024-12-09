@@ -1,0 +1,17 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@typescript-eslint/explicit-member-accessibility": 2
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "node",
+    "import",
+    "promise"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ]
+}

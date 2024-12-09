@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "../",
+    "outDir": "../build",
+    "lib": ["es2017"],
+    "strictBindCallApply": true
+  },
+  "include": [
+    "./**/*"
+  ]
+}
